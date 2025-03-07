@@ -1,0 +1,11 @@
+[package]
+name = "sandbox"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.97"
+cgroups-rs = "0.3.4"
+nix = { features=["sched", "resource", "process", "fs", "signal"], version="0.29.0" }
+tempfile = "3.17.1"
+seccompiler = "0.4.0"
